@@ -1,0 +1,93 @@
+@use "../../scss/abstracts/vars.scss" as *;
+@use "../../scss/abstracts/fn.scss" as fn;
+
+.fullpage {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .fullpage__title {
+    font-size: map-get($headings, h1);
+    text-shadow: fn.shadow(map-get($colors, B));
+    font-family: $font-title;
+    letter-spacing: 4px;
+    color: $text-color-light;
+    animation-duration: 2s;
+    animation-delay: 0.25s;
+    animation-name: slideIn;
+  }
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fullpage__subtitle {
+    margin-top: 2rem;
+    font-size: map-get($headings, h2);
+    font-family: $font-subtitle-condensed;
+    color: $text-color-light;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: subTitle;
+    animation-delay: 2s;
+    animation-duration: 3s;
+  }
+
+  @keyframes subTitle {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fullpage_btn {
+
+    display: block;
+    height: 100px;
+  }
+
+ .fullpage__btn--icon {
+  margin-top: 1em;
+    width: 60px;
+    height: 60px;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-name: btnAnimation;
+    opacity: 0;
+  }
+
+  @keyframes btnAnimation {
+    from {
+      transform: scale(1);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1.4);
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .fullpage {
+      h1 {
+        font-size: map-get($headings, h2);
+      }
+      h3 {
+        font-size: map-get($headings, p);
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@use "../../scss/abstracts/vars.scss" as *;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: map-get($colors, A);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+}
+
+
+    #videoBG {
+    position: absolute;
+    margin-top: -15%;
+    width: 100%;
+    z-index: -10;
+    @media screen and (max-width: 768px){
+        margin-top: 0;
+    }
+}
+.text__form{
+        margin-top: 280px;
+        font-size: map-get($headings, h2);
+        color: map-get($colors, C);
+        text-shadow: shadow(map-get($colors, C));
+        text-align: center;
+        z-index: 5;
+        @media screen and (max-width: 768px){
+            margin-top: 200px;
+        }
+    }
+.form__area{
+    margin-top: 25px;
+    z-index: 15;
+    margin-left: 50%;
+    margin-right: 50%;  
+    .form__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        label{
+            width: 180px;
+            text-align: center;
+            color: $text-color-light;
+            font-size: map-get($headings, p);
+        }
+        input, textarea{
+            background-color: $text-color-light;
+            opacity: 0.5;
+            outline: none;
+        }
+        input:focus, textarea:focus{
+            border: 3px solid map-get($colors, C) ;
+            border-radius: 7px;
+            opacity: 0.7;
+            color: #fff;
+        }
+    .btn{
+        background-color: $text-color-light;
+        margin-top: 20px;
+        border: none;
+        
+    }
+    .btn:active{
+        background-color: map-get($colors, C);
+        border-radius: 5px;
+        scale: 1.05;
+    }
+    }
+
+}
+
+
+
+
+#email{
+    opacity: 0;
+}

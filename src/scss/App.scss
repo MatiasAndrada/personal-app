@@ -1,0 +1,24 @@
+@forward "./abstracts/fn.scss";
+@forward "./abstracts/vars.scss";
+
+@use "~bootstrap/scss/bootstrap";
+
+//sections
+@use "./sections/Header.scss";
+@use "./sections/Home.scss";
+@use "./sections/SobreMi.scss";
+@use "./sections/Service.scss";
+@use "./sections/Footer.scss";
+
+
+//pages
+@use "./pages/Contact.scss";
+
+
+//reset
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  

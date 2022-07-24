@@ -1,0 +1,43 @@
+$headings: (
+    h1: 4.7em,
+    h2: 2em,
+    h3: 1.6em,
+    h4: 1.3em,
+    h5: 0.8em,
+    p: 1.1em);
+$colors: (
+    A: #000000,
+    B: #1729c5,
+    C: #0099DD,
+    D: #005E54,
+    E: #7a2a6e,
+    F: #E1523D,
+    G: #F2C12E);
+$b-radius: (
+    small: 0.3em,
+    medium: 0.8em,
+    large: 1.2em);
+
+    
+    //fonts
+    @font-face {
+        font-family: 'Hello';
+        font-weight: 900;
+        src: local("Hello"), url(../../assets/fonts/Hello.ttf) format("truetype");
+    };
+    @font-face {
+        font-family: 'Coolvetica-it';
+        font-weight: 900;
+        src: local("Coolvetica-it"), url(../../assets/fonts/coolvetica-it.otf) format("truetype");
+    };
+    @font-face {
+        font-family: 'Coolvetica-condensed';
+        font-weight: 900;
+        src: local('Coolvetica-condensed'), url(../../assets/fonts/coolvetica-condensed.otf) format("truetype");
+    };
+$font-title: "Hello";
+$font-subtitle-it: 'Coolvetica-it';
+$font-subtitle-condensed: 'Coolvetica-condensed';
+$font-paragraph: 'Heebo';
+$text-color-light: #d9d9d9;
+$teext-color-dark: #000;

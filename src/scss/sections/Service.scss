@@ -1,0 +1,54 @@
+@use "../../scss/abstracts/vars.scss" as *;
+@use "../../scss/abstracts/fn.scss" as fn;
+
+.service {
+  height: 100vh;
+
+  .service__title {
+    height: 10%;
+    padding-top: 1em;
+    text-align: center;
+    font-family: $font-subtitle-it;
+    text-shadow: fn.shadow(map-get($colors, F));
+  }
+  .service__container {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-around;
+    .container__item{
+        width: 320px;
+        height: fit-content;
+        padding: 1em;
+        background-color: map-get($colors, F);
+        border-radius: map-get($b-radius, medium);
+        color: $text-color-light;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        /* .item__img{} */
+        .item__title{
+            padding: 1em;
+            width: 70%;
+            text-align: center;
+            color: $text-color-light;
+            font-family: $font-subtitle-condensed;
+            font-size: map-get($headings, h3);
+            background-color: map-get($colors, E);
+            border-radius: map-get($b-radius, large);
+
+        }
+        .serviceitem__paragraph{
+            padding: 1em;
+            font-family: $font-paragraph;
+            font-size: map-get($headings, p);
+            color: $text-color-dark;
+        }
+    }
+  }
+}
