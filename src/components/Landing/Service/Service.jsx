@@ -1,4 +1,9 @@
 import React from "react";
+//img
+import webDesign from "../../../assets/icon/iconservice/web-design-128.png";
+import javascript from "../../../assets/icon/iconservice/javascript-128.png";
+import reactNative from "../../../assets/icon/iconservice/react-native-128.png";
+import backend from "../../../assets/icon/iconservice/backend-128.png";
 
 const Service = () => {
   return (
@@ -10,8 +15,8 @@ const Service = () => {
       </p> */}
 
       <div className="service__container">
-        <div className="container__item">
-          {/* <img clasName="item__img" src="multimedia/iconservice/icon1.png" /> */}
+        <div className="container__item container__item--orange">
+          <img clasName="item__img" src={webDesign} alt="diseño web"/>
           <h3 className="item__title">DISEÑO WEB</h3>
           <p className="item__paragraph">
             Con experiencia en una amplia gama de tecnologías disponibles para
@@ -19,26 +24,25 @@ const Service = () => {
             Bootstrap, Git y además siempre responsive.
           </p>
         </div>
-        <div className="container__item">
-          {/* <img clasName="item__img" src="multimedia/iconservice/icon2.png"/> */}
-          <h3 className="item__title">DISEÑO CON CMS</h3>
+        <div className="container__item container__item--lightBlue">
+          <img clasName="item__img" src={javascript}/>
+          <h3 className="item__title">JavaScript</h3>
           <p className="item__paragraph">
-            Cada cliente es único por eso me enfoco en brindar soluciones
-            personalizadas para cada uno.
+          su sintaxis, pasando por Ciclos, Variables, Funciones, Arrays, DOM, Eventos, JSON, Storage, Librerías, Promises, Ajax, Fetch, entre otras
           </p>
         </div>
-        <div className="container__item">
-          {/* <img clasName="item__img" src="multimedia/iconservice/icon3.png"/> */}
-          <h3 className="item__title">MARKETING DIGITAL</h3>
+        <div className="container__item container__item--yellow">
+          <img clasName="item__img" src={reactNative}/>
+          <h3 className="item__title">ReactJS</h3>
           <p className="item__paragraph">
             Me aseguraré de que su sitio web sea visible en la web y pueda
             empezar a competir en la industria digital: redes sociales,
             community management, analytics y más.
           </p>
         </div>
-        <div className="container__item">
-          {/* <img clasName="item__img" src="multimedia/iconservice/icon4.png" /> */}
-          <h3 className="item__title">OPTIMIZACION SEO</h3>
+        <div className="container__item container__item--green">
+          {<img clasName="item__img" src={backend} />}
+          <h3 className="item__title">Back-End</h3>
           <p className="item__paragraph">
             ¡Ganar mas! Soy el responsable de realizar los cambios necesarios
             para que aparezca primero en tus búsquedas: SEO y SEM, lo que
