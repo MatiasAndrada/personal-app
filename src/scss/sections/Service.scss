@@ -9,7 +9,7 @@
     padding-top: 1em;
     text-align: center;
     font-family: $font-subtitle-it;
-    text-shadow: fn.shadow(map-get($colors, F));
+    text-shadow: fn.shadow(map-get($colors, D));
   }
   .service__container {
     height: 90%;
@@ -19,21 +19,36 @@
 
     justify-content: space-around;
     .container__item{
-        width: 320px;
+        width: 300px;
         height: fit-content;
         padding: 1em;
-        background-color: map-get($colors, F);
+        background-color: map-get($colors, D);
         border-radius: map-get($b-radius, medium);
         color: $text-color-light;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+      &--orange{
+        background-color: map-get($colors, F);
+        color: $text-color-dark;
+      }
+      &--lightBlue{
+        background-color: map-get($colors, C);
+        color: $text-color-dark;
+      }
+      &--yellow{
+        background-color: map-get($colors, G);
+        color: $text-color-dark;
+      }
+      &--green{
+        background-color: map-get($colors, D);
+        color: $text-color-dark;
+      }
 
         /* .item__img{} */
         .item__title{
-            padding: 1em;
+            padding: 4px;
             width: 70%;
             text-align: center;
             color: $text-color-light;
